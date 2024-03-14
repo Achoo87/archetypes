@@ -1,0 +1,156 @@
+.html, body {
+    margin: 0px;
+    max-width: 100%;
+    overflow-x: hidden;
+    overscroll-behavior: none;
+    border: solid;
+    color: transparent;
+    border-width: 15px;
+}
+
+.background {
+    width: 100%;
+    height: auto;
+    display: block;
+    position:absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background: rgb(5, 5, 5);
+    z-index: -1;
+}
+
+.container {
+    width:100%;
+    height: 100%;
+    overflow:visible;
+}
+
+.headerdiv {
+    float: left;
+    width: 33%;
+    border: solid;
+    /* color: blue; */
+    margin: 0;
+}
+
+.bodydiv {
+    float: right;
+    width: 60%;
+    border: solid;
+    /* color: brown; */
+    margin: 0;
+}
+
+#contentHeader {
+    margin: 0px;
+    color: rgb(243, 243, 243);
+    font-size: 36px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#contentParagraph {
+    margin: 0;
+    color: rgb(243, 243, 243);
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 1.2;
+    letter-spacing: 0.01;
+    word-spacing: 0.16;
+}
+
+p {
+    text-indent: 18px;
+}
+
+#growSpan {
+    font-size: 36px; /* Initial font size */
+    cursor: pointer;
+  }
+  
+  .grow {
+    animation: growAnimation 60s forwards;
+  }
+  
+  .shrink {
+    animation: shrinkAnimation 5s forwards;
+  }
+  
+  @keyframes growAnimation {
+    from {
+      font-size: 36px;
+    }
+    to {
+      font-size: 200px;
+    }
+  }
+  
+  @keyframes shrinkAnimation {
+    from {
+      font-size: 200px;
+    }
+    to {
+      font-size: 36px;
+    }
+  }
+  
+  /* .span:hover::before {
+    content: "deflate the self";
+    visibility: hidden;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 3px;
+    border-radius: 3px;
+    position: fixed;
+    z-index: 9999;
+    opacity: 0;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: opacity 0.3s ease;
+  }
+  
+  span:hover::before {
+    opacity: 1;
+  } */
+
+
+  .tooltip {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    white-space: nowrap;
+    display: none; /* Initially hidden */
+  }
+
+  #resetButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px; /* Adjusted to left */
+    padding: 8px 16px;
+    font-size: 12px;
+    background-color: #000000;
+    color: #fff;
+    border: solid;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#resetButton:hover {
+    background-color: #000000;
+    color: blue;
+}
+
+#clock {
+    position: fixed;
+    bottom: 25px;
+    right: 110px; /* Adjusted to leave space for the reset button */
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+  
