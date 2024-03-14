@@ -114,8 +114,8 @@ document.addEventListener("DOMContentLoaded", function() {
             // Toggle pause state
             isPaused = !isPaused;
         } else if (event.key === 'Escape') {
-            // Redirect to index.html
-            window.location.href = 'index.html';
+            // Redirect to main.html
+            window.location.href = 'portals.html';
         }
     });
 });
