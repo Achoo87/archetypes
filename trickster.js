@@ -103,10 +103,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
   // Listen for keydown events on arrow keys, spacebar, and delete key
   document.addEventListener('keydown', function(event) {
-      if (event.key === 'ArrowUp') {
+      if (event.key === 'ArrowLeft') {
           // Increase typing speed
           typingSpeed = Math.max(typingSpeed - 5, minSpeed);
-      } else if (event.key === 'ArrowDown') {
+      } else if (event.key === 'ArrowRight') {
           // Decrease typing speed
           typingSpeed = Math.min(typingSpeed + 5, maxSpeed);
       } else if (event.key === ' ') {
