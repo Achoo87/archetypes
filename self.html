@@ -1,33 +1,39 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="self.css"/>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Palanquin:wght@100;300&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">    
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="https://ajax.googleapis.com/ajax/libs/cesiumjs/1.78/Build/Cesium/Cesium.js"></script>
-        <body>
-            <title>Self</title>
-            <div class="background"></div>
-            <div id="clock"></div>
-            <button id="resetButton">RESET</button>
+<head>
+    <link rel="stylesheet" href="self.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Palanquin:wght@100;300&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Palanquin:wght@100;300&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-            <div class="container">
-                <div class="headerdiv">
-                    <h id="contentHeader"><span id="growSpan">THE SELF</span></h>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Self</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/cesiumjs/1.78/Build/Cesium/Cesium.js"></script>
+</head>
+<body>
+    <div id="clock"></div>
+    <button id="resetButton">RESET</button>
+
+    <div class="background"></div>
+
+        <div class="container">
+            <div class="headerdiv">
+                <h id="contentHeader"><span id="growSpan">THE SELF</span></h>
                     <div id="tooltip" class="deflate"></div>
-                </div>
-                <div class="bodydiv">
-                    <p id="contentParagraph">The Self is the archetype of the psychical totality or the wholeness. It is not identical with the ego but placed itself somehow above or in other words in the midst between ego-consciousness and unconsciousness. The Self is actually a conjunction (union) of the consciousness and unconscious. This conjunction is gradually accomplished by assimilating the contents of the unconscious with the help of dreams interpretation. But perhaps the most important aspect of the Self is its numinosity (capable of raising intense feelings of awe). According to Jung, the experience of the Self on the empirical and personal level is similar to a religious revelation. The Self being, psychologically speaking, the equivalent of the concept of supreme deity or God.</p><br><br>
-                    <p id="contentParagraph">AROPA</p> 
-                    
-                </div>
             </div>
+            <div class="bodydiv">
+                <p id="contentParagraph">The Self is the archetype of the psychical totality or the wholeness. It is not identical with the ego but placed itself somehow above or in other words in the midst between ego-consciousness and unconsciousness. The Self is actually a conjunction (union) of the consciousness and unconscious. This conjunction is gradually accomplished by assimilating the contents of the unconscious with the help of dreams interpretation. But perhaps the most important aspect of the Self is its numinosity (capable of raising intense feelings of awe). According to Jung, the experience of the Self on the empirical and personal level is similar to a religious revelation. The Self being, psychologically speaking, the equivalent of the concept of supreme deity or God.</p><br><br>
+                <p id="contentParagraph">AROPA</p> 
+            </div>
+        </div>
             
+        <div class="instructions">&#x238B; (hold esc) for portals<br>&#8592; to slow down<br> &#8594; to speed up<br> &#9141; to pause</div>
 
-
-            <script src="self.js"></script>
-        </body>
-    </head>
+        <script src="self.js"></script>
+</body>
 </html>

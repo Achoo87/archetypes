@@ -1,34 +1,41 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="persona.css"/>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Palanquin:wght@100;300&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">    
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="https://ajax.googleapis.com/ajax/libs/cesiumjs/1.78/Build/Cesium/Cesium.js"></script>
-        <body>
-            <div class="background"></div>
-            <div id="clock"></div>
-            <button id="resetButton">RESET</button>
+<head>
+    <link rel="stylesheet" href="persona.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Palanquin:wght@100;300&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Palanquin:wght@100;300&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Persona</title>
 
-            <div class="container">
-                <div class="headerdiv">
-                    <h id="contentHeader">The Persona</h>
-                </div>
-                <div class="bodydiv">
-                    <p id="contentParagraph">The persona (which represents the social mask that we put on) lies between the ego and society, representing our conscious life and outer world. The persona begins to form early in childhood out of a need to conform to the wishes and expectations of parents, peers and teachers. Children quickly learn that certain attitudes and behaviours are acceptable and may be rewarded with approval while others are unacceptable and may result in punishment.</p>
-                    <p id="contentParagraph">“Whoever looks into the mirror of the water will see first of all his own face. Whoever goes to himself risks a confrontation with himself. The mirror does not flatter, it faithfully shows whatever looks into it; namely, the face we never show to the world because we cover it with the persona, the mask of the actor. But the mirror lies behind the mask and shows the true face.”
-                        Carl Jung, C.W. Vol 9. Part I: Archetypes and the Collective Unconscious</p>
-                    <p id="contentParagraph">The tendency is to build acceptable traits into the persona and to keep unacceptable traits hidden or repressed. Perhaps being assertive is seen as rude and socially unacceptable and one becomes passive, affecting one’s relationships and career, or one can be too agreeable because one doesn’t like conflicts, but is taken advantage of. These undesirable aspects eventually take their toll on us as we mature, forming our shadow, the dark side of our personality, whom we may be possessed by at any moment, in sudden emotional outbursts.</p> 
-                    <p id="contentParagraph">For Jung, the negotiation with one’s shadow is a lifelong process as part of our self-education, which  allows us to rescue the good qualities that lie dormant in our psyche and be honest about who we are, as well as knowing how much good we can do, and what crimes we are capable of. The shadow, which is usually perceived as negative, also has its positive side. It becomes hostile only when it is ignored or misunderstood.</p><br><br>
-                    <p id="contentParagraph">Eternalised Publications</p>
-                </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/cesiumjs/1.78/Build/Cesium/Cesium.js"></script>
+</head>
+<body>
+    <div id="clock"></div>
+    <button id="resetButton">RESET</button>
+
+    <div class="background"></div>
+
+        <div class="container">
+            <div class="headerdiv">
+                <h id="contentHeader">The Persona</h>
             </div>
+            <div class="bodydiv">
+                <p id="contentParagraph">The persona (which represents the social mask that we put on) lies between the ego and society, representing our conscious life and outer world. The persona begins to form early in childhood out of a need to conform to the wishes and expectations of parents, peers and teachers. Children quickly learn that certain attitudes and behaviours are acceptable and may be rewarded with approval while others are unacceptable and may result in punishment.</p>
+                <p id="contentParagraph">“Whoever looks into the mirror of the water will see first of all his own face. Whoever goes to himself risks a confrontation with himself. The mirror does not flatter, it faithfully shows whatever looks into it; namely, the face we never show to the world because we cover it with the persona, the mask of the actor. But the mirror lies behind the mask and shows the true face.”<br>Carl Jung, C.W. Vol 9. Part I: Archetypes and the Collective Unconscious</p>
+                <p id="contentParagraph">The tendency is to build acceptable traits into the persona and to keep unacceptable traits hidden or repressed. Perhaps being assertive is seen as rude and socially unacceptable and one becomes passive, affecting one’s relationships and career, or one can be too agreeable because one doesn’t like conflicts, but is taken advantage of. These undesirable aspects eventually take their toll on us as we mature, forming our shadow, the dark side of our personality, whom we may be possessed by at any moment, in sudden emotional outbursts.</p> 
+                <p id="contentParagraph">For Jung, the negotiation with one’s shadow is a lifelong process as part of our self-education, which  allows us to rescue the good qualities that lie dormant in our psyche and be honest about who we are, as well as knowing how much good we can do, and what crimes we are capable of. The shadow, which is usually perceived as negative, also has its positive side. It becomes hostile only when it is ignored or misunderstood.</p><br><br>
+                <p id="contentParagraph">Eternalised Publications</p>
+            </div>
+        </div>
             
+        <div class="instructions">&#x238B; (hold esc) for portals<br>&#8592; to slow down<br> &#8594; to speed up<br> &#9141; to pause</div>
 
-
-            <script src="persona.js"></script>
-        </body>
-    </head>
+        <script src="persona.js"></script>
+</body>
 </html>
