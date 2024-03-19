@@ -78,39 +78,22 @@ setInterval(updateTime, 1000);
     });
   });
 
-
-
-  const nodeContainer = document.getElementById('node-container');
-
-  // Set container size to window size
-  nodeContainer.style.width = window.innerWidth + 'px';
-  nodeContainer.style.height = window.innerHeight + 'px';
-
-  // Generate random nodes
-  const numNodes = 50; // Adjust as needed
-  const nodes = [];
-  for (let i = 0; i < numNodes; i++) {
-      const node = document.createElement('div');
-      node.className = 'node';
-      node.style.left = Math.random() * nodeContainer.offsetWidth + 'px';
-      node.style.top = Math.random() * nodeContainer.offsetHeight + 'px';
-      nodeContainer.appendChild(node);
-      nodes.push(node);
-  }
-
-  // Connect nodes
-  for (let i = 0; i < nodes.length; i++) {
-      const node = nodes[i];
-      const connections = 2 + Math.floor(Math.random() * (numNodes - 2)); // Each node connects to at least 2 others
-      for (let j = 0; j < connections; j++) {
-          let targetIndex;
-          do {
-              targetIndex = Math.floor(Math.random() * numNodes);
-          } while (targetIndex === i || nodes[targetIndex].connections.includes(node));
-          const targetNode = nodes[targetIndex];
-          node.style.border = '1px solid white';
-          targetNode.style.border = '1px solid white';
-          node.connections.push(targetNode);
-          targetNode.connections.push(node);
-      }
-  }
+  document.getElementById('contentHeader').addEventListener('mouseenter', function(event) {
+    const circle = document.createElement('div');
+    circle.id = 'circle';
+    document.body.appendChild(circle);
+    
+    const randomX = Math.random() * window.innerWidth;
+    const randomY = Math.random() * window.innerHeight;
+    
+    circle.style.left = `${randomX}px`;
+    circle.style.top = `${randomY}px`;
+  });
+  
+  document.getElementById('contentHeader').addEventListener('mouseleave', function(event) {
+    const circle = document.getElementById('circle');
+    if (circle) {
+      circle.remove();
+    }
+  });
+  

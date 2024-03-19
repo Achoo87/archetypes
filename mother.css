@@ -132,7 +132,6 @@ p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 18px;
     color: white;
-    z-index: 10000;
 }
 
 #red.circle {

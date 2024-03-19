@@ -63,7 +63,7 @@ body {
     border-width: 15px;
   }
 
-#resetButton {
+  #resetButton {
     position: fixed;
     bottom: 20px;
     right: 20px; /* Adjusted to left */
@@ -75,7 +75,7 @@ body {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    z-index: 5;
 }
 
 #resetButton:hover {
@@ -88,7 +88,7 @@ body {
     bottom: 25px;
     right: 110px; /* Adjusted to leave space for the reset button */
     font-size: 18px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: Arial, sans-serif;
     color: white;
 }
 
@@ -163,41 +163,20 @@ p {
     color: white;
 }
 
-html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-
 .circle {
     position: absolute;
     border-radius: 50%;
-    transition: transform 0.5s ease-in-out; /* Updated transition timing */
+    cursor: pointer;
 }
 
 .red {
     background-color: red;
-    width: 100px;
-    height: 100px;
 }
 
 .blue {
     background-color: blue;
-    width: 150px;
-    height: 150px;
 }
 
 .yellow {
     background-color: yellow;
-    width: 200px;
-    height: 200px;
-}
-
-.hovered {
-    transform: translate(
-        calc(-50% + random(-50px, 50px)),
-        calc(-50% + random(-50px, 50px))
-    ) rotate(20deg); /* Added rotation */
 }

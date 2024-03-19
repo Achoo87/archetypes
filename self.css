@@ -50,7 +50,7 @@
   padding-right: 15px;
 }
 
-.contentHeader {
+#contentHeader {
   margin: 0px;
   color: rgb(243, 243, 243);
   font-size: 36px;
@@ -180,3 +180,24 @@ p {
   font-size: 18px;
   color: white;
 }
+
+.circle {
+  height: 450px;
+  width: 450px;
+  position: fixed;
+  top: 125px;
+  background-color: transparent;
+  border: solid white;
+  border-radius: 50%;
+  z-index: 1000000;
+  transition: transform 0.3s; /* Add transition for smooth effect */
+}
+
+/* Add a class for the new circles */
+.dynamic-circle {
+  position: fixed;
+  background-color: white;
+  border-radius: 50%;
+  z-index: 999999; /* Ensure the new circles are above the main circle */
+}
+

@@ -6,6 +6,11 @@
     border: solid;
     color: transparent;
     border-width: 15px;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: transparent; /* Set body background to transparent */
 }
 
 .background {
@@ -34,44 +39,35 @@
     float: left;
     width: 34%;
     height: 200px;
-    /* border: solid;
-    color: blue; */
     margin: 0;
-    padding-top: 10px;
-    padding-left: 10px;
+    padding-top: 15px;
+    padding-left: 15px;
     overflow-wrap: normal;
 }
 
 .bodydiv {
     float: right;
-    width: 64%;
-    /* border: solid;
-    color: blue; */
+    width: 60%;
     margin: 0;
-    padding-top: 10px;
-    padding-right: 10px;
-
+    padding-top: 15px;
+    padding-right: 15px;
 }
 
 #contentHeader {
     margin: 0px;
     color: rgb(243, 243, 243);
-    font-size: 60px;
+    font-size: 36px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-align: justify;
-    hyphens: auto;
-    overflow: hidden; /* Ensures the text doesn't overflow */
-    white-space: nowrap; /* Prevents wrapping */
-}
+  }
 
-#contentParagraph {
+.contentParagraph {
     margin: 0;
     color: rgb(243, 243, 243);
     font-size: 18px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    line-height: 1.4;
-    display: inline-block;
-    flex-grow: 1;
+    line-height: 1.2;
+    letter-spacing: 0.01;
+    word-spacing: 0.16;
 }
 
 p {

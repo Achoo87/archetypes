@@ -18,32 +18,32 @@ function resetPage() {
 // Add event listener to the reset button
 document.getElementById("resetButton").addEventListener("click", resetPage);
 
-// document.addEventListener('DOMContentLoaded', function() {
-//   // Get all visible elements
-//   const allVisibleElements = document.querySelectorAll('*');
+document.addEventListener('DOMContentLoaded', function() {
+  // Get all visible elements
+  const allVisibleElements = document.querySelectorAll('*');
 
-//   // Function to apply invert filter to each visible element
-//   function applyInvertFilter() {
-//     allVisibleElements.forEach(function(element) {
-//       element.style.transition = 'instant';
-//       element.style.filter = 'invert(100%)';
-//     });
-//     this.style.filter = 'invert(0%)'; // Invert the hovered span again
-//   }
+  // Function to apply invert filter to each visible element
+  function applyInvertFilter() {
+    allVisibleElements.forEach(function(element) {
+      element.style.transition = 'instant';
+      element.style.filter = 'invert(100%)';
+    });
+    this.style.filter = 'invert(0%)'; // Invert the hovered span again
+  }
 
-//   // Function to remove invert filter from all elements
-//   function removeInvertFilter() {
-//     allVisibleElements.forEach(function(element) {
-//       element.style.transition = 'instant';
-//       element.style.filter = '';
-//     });
-//   }
+  // Function to remove invert filter from all elements
+  function removeInvertFilter() {
+    allVisibleElements.forEach(function(element) {
+      element.style.transition = 'instant';
+      element.style.filter = '';
+    });
+  }
 
-//   // Add event listener to the target word
-//   const targetWord = document.querySelector('.highlight-word');
-//   targetWord.addEventListener('mouseover', applyInvertFilter);
-//   targetWord.addEventListener('mouseout', removeInvertFilter);
-// });
+  // Add event listener to the target word
+  const targetWord = document.querySelector('.highlight-word');
+  targetWord.addEventListener('mouseover', applyInvertFilter);
+  targetWord.addEventListener('mouseout', removeInvertFilter);
+});
 
 document.addEventListener("DOMContentLoaded", function() {
   var paragraphs = document.querySelectorAll('#contentParagraph');
@@ -109,26 +109,10 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
-document.addEventListener("DOMContentLoaded", function() {
-    const circles = document.querySelectorAll(".circle");
-    const bodyRect = document.body.getBoundingClientRect(); // Get dimensions of the body element
 
-    circles.forEach(circle => {
-        circle.addEventListener("mouseenter", function() {
-            // Generate random values for translation and rotation
-            const translateX = random(-bodyRect.width * 0.25, bodyRect.width * 0.25); // Move within 25% of body width
-            const translateY = random(-bodyRect.height * 0.25, bodyRect.height * 0.25); // Move within 25% of body height
-            const rotation = random(-20, 20);
 
-            // Apply translation and rotation
-            circle.style.transform = `translate(${translateX}px, ${translateY}px) rotate(${rotation}deg)`;
-        });
-    });
-});
 
-function random(min, max) {
-    return Math.random() * (max - min) + min;
-}
+
 
 
 

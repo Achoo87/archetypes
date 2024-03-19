@@ -85,7 +85,7 @@ var tooltip = document.querySelector('#cancelRedirect::after');
     // Set timeout to redirect after 30 seconds
     var redirectTimeout = setTimeout(function() {
       window.location.href = 'index.html';
-    }, 30000); // 30 seconds in milliseconds
+    }, 5000); // 30 seconds in milliseconds
 
     // Function to cancel the redirect timeout when the span is clicked
     document.getElementById('cancelRedirect').addEventListener('click', function() {
