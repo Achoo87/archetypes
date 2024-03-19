@@ -4,7 +4,6 @@
     overflow-x: hidden;
     overscroll-behavior: none;
     border: solid;
-    /* color: transparent; */
     border-width: 15px;
 }
 
@@ -139,7 +138,7 @@ p {
     text-indent: 36px;
 }
 
-.highlight-word {
+/* .highlight-word {
     color: rgb(0, 0, 0);
 }
   
@@ -149,4 +148,56 @@ p {
 
 #contentHeader:hover {
     filter: invert(100%);
+}
+
+.contentParagraph:not(:first-child) {
+    opacity: 0;
+} */
+
+.instructions {
+    left: 15px;
+    bottom: 25px;
+    position: absolute;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    color: white;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    transition: transform 0.5s ease-in-out; /* Updated transition timing */
+}
+
+.red {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+}
+
+.blue {
+    background-color: blue;
+    width: 150px;
+    height: 150px;
+}
+
+.yellow {
+    background-color: yellow;
+    width: 200px;
+    height: 200px;
+}
+
+.hovered {
+    transform: translate(
+        calc(-50% + random(-50px, 50px)),
+        calc(-50% + random(-50px, 50px))
+    ) rotate(20deg); /* Added rotation */
 }

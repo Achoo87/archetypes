@@ -1,0 +1,26 @@
+- incorporate a primary landing page that has "ARCHETYPES" title sequence that is interactive (demystify?)
+    - more contextual information regarding to archetypes so anchor the user into what they're about to experience ("enter" button)
+        - leads to loading page (decrease loading time and make it more visually interesting) (secondary landing page)
+            - leads to portals.html (tertirary landing page)
+- each portal opens up bigger to reveal an image of the archetype (provides context to prompt further exploration)
+    - title in the middle of the image?
+        - bitmap effect that clears on page loading?
+
+
+- site is lacking texture
+- fix font pairing and macro and microtypography
+- incorporate an image(s) to each archetype page
+- fix clock and add timer
+- highllght style for certain emphasis?
+
+Montserrat
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Palanquin:wght@100;300&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+Poppins
+
+Lato
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Palanquin:wght@100;300&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">

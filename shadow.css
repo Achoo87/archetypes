@@ -132,3 +132,16 @@ p {
     font-family: Arial, sans-serif;
     color: white;
 }
+
+.contentParagraph:not(:first-child) {
+    opacity: 0;
+}
+
+.instructions {
+    left: 15px;
+    bottom: 25px;
+    position: absolute;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    color: white;
+}

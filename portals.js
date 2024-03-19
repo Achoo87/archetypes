@@ -133,26 +133,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function updateTime() {
     var now = new Date();
-    var timezoneOffset = now.getTimezoneOffset() / 60; // Convert minutes to hours
-    var timezone = "GMT" + (timezoneOffset >= 0 ? "+" : "-") + Math.abs(timezoneOffset);
-    var hours = now.getUTCHours() + timezoneOffset; // Adjust hours according to timezone
-    var minutes = now.getUTCMinutes();
-    var seconds = now.getUTCSeconds();
-
-    // Add leading zeros if needed
-    hours = (hours < 10 ? "0" : "") + hours;
-    minutes = (minutes < 10 ? "0" : "") + minutes;
-    seconds = (seconds < 10 ? "0" : "") + seconds;
-
-    var timeString = hours + ":" + minutes + ":" + seconds + " " + timezone;
+    var options = { hour12: true, hour: 'numeric', minute: 'numeric', second: 'numeric', timeZoneName: 'short' };
+    var timeString = now.toLocaleTimeString('en-US', options);
     document.getElementById("clock").textContent = timeString;
 }
 
-// Update the time every second
-setInterval(updateTime, 1000);
-
-// Initial call to display time immediately
+// Call updateTime function to update clock with local time and timezone
 updateTime();
+
+// Update time every second
+setInterval(updateTime, 1000);
 
 function resetPage() {
     location.reload(); // Reload the page
